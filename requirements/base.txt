@@ -1,0 +1,14 @@
+# starlette dependencies
+aiofiles
+gunicorn
+jinja2
+python-multipart
+starlette
+uvicorn
+
+# accent stuff
+git+https://github.com/accent-starlette/starlette-core.git@master#egg=starlette-core
+
+# other
+sentry-asgi
+WeasyPrint

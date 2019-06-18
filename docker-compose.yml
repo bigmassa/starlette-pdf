@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  app:
+    build:
+      context: .
+      args:
+      - REQUIREMENTS_FILE=/requirements/dev.txt
+    environment:
+      - DEBUG=True
+    volumes:
+    - ./src:/app
+    ports:
+    - "80:80"
+    command: ['/start-reload.sh']
