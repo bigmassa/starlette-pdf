@@ -28,7 +28,9 @@ class FromString(HTTPEndpoint):
         html = HTML(string=content)
         html.write_pdf(path)
         task = BackgroundTask(cleanup, path=path)
-        return FileResponse(path, media_type="application/pdf", filename="output.pdf", background=task)
+        return FileResponse(
+            path, media_type="application/pdf", filename="output.pdf", background=task
+        )
 
 
 class FromURL(HTTPEndpoint):
@@ -45,4 +47,6 @@ class FromURL(HTTPEndpoint):
         html = HTML(url=url)
         html.write_pdf(path)
         task = BackgroundTask(cleanup, path=path)
-        return FileResponse(path, media_type="application/pdf", filename="output.pdf", background=task)
+        return FileResponse(
+            path, media_type="application/pdf", filename="output.pdf", background=task
+        )

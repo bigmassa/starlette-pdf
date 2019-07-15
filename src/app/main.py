@@ -9,7 +9,9 @@ app = Starlette(debug=settings.DEBUG)
 
 # routes
 app.add_route("/", endpoints.Home, methods=["GET"], name="home")
-app.add_route("/from-string", endpoints.FromString, methods=["GET", "POST"], name="from-string")
+app.add_route(
+    "/from-string", endpoints.FromString, methods=["GET", "POST"], name="from-string"
+)
 app.add_route("/from-url", endpoints.FromURL, methods=["GET", "POST"], name="from-url")
 
 # middleware
