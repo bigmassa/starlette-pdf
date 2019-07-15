@@ -54,8 +54,7 @@ WORKDIR     /app
 
 ENV         PYTHONUNBUFFERED=1 \
             PYTHONPATH=/app \
-            ALLOWED_HOSTS="*" \
-            SECRET_KEY="***** change me *****"
+            ALLOWED_HOSTS="*"
 
 # Entry:
 
