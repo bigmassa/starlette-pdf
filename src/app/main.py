@@ -8,8 +8,8 @@ app = Starlette(debug=settings.DEBUG)
 
 # routes
 app.add_route("/", endpoints.Home, methods=["GET"], name="home")
-app.add_route("/pdf/from-string", endpoints.FromString, methods=["GET", "POST"], name="from-string")
-app.add_route("/pdf/from-url", endpoints.FromURL, methods=["GET", "POST"], name="from-url")
+app.add_route("/from-string", endpoints.FromString, methods=["GET", "POST"], name="from-string")
+app.add_route("/from-url", endpoints.FromURL, methods=["GET", "POST"], name="from-url")
 
 # exception handlers
 app.add_exception_handler(404, handlers.not_found)
