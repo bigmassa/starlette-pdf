@@ -1,4 +1,12 @@
 
+<a href="https://travis-ci.org/accent-starlette/starlette-pdf">
+    <img src="https://travis-ci.org/accent-starlette/starlette-pdf.svg?branch=master" alt="Build Status">
+</a>
+
+<a href="https://codecov.io/gh/accent-starlette/starlette-pdf">
+  <img src="https://codecov.io/gh/accent-starlette/starlette-pdf/branch/master/graph/badge.svg" alt="Coverage" />
+</a>
+
 ## Page rule CSS
 
 - https://www.quackit.com/css/at-rules/css_top-center_at-rule.cfm
