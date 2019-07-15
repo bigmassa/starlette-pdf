@@ -3,15 +3,37 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>PDF</title>
+        <link rel="stylesheet" href="https://unpkg.com/karma-css@latest/dist/karma.min.css">
+        <title>WeazyPrint PDF Generator</title>
         {% block extra_css %}{% endblock %}
+        <style>
+            header { padding: 1rem 0; margin-bottom: 2rem; }
+            header a { color: #fff; font-size: 2rem; }
+            header a:hover { color: #fff; }
+            footer { margin-top: 10rem; }
+            footer ul { list-style: none; }
+        </style>
     </head>
 
     <body>
-    <header></header>
-    {% block content %}{% endblock %}
+    <header class="b-primary">
+        <div class="container">
+            <a href="/">WeazyPrint PDF Generator</a>
+        </div>
+    </header>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+    <footer>
+        <div class="container">
+            <p class="c-gray">Links</p>
+            <ul>
+                <li><a class="c-gray" href="https://github.com/accent-starlette/starlette-pdf" target="_blank">Github</a></li>
+                <li><a class="c-gray" href="https://weasyprint.org/" target="_blank">WeasyPrint.org</a></li>
+                <li><a class="c-gray" href="https://weasyprint.readthedocs.io/en/latest/" target="_blank">WeasyPrint.org Docs</a></li>
+            </ul>
+        </div>
+    </footer>
     {% block extra_js %}{% endblock %}
     </body>
 </html>
