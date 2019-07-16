@@ -14,6 +14,8 @@ app.add_route(
 )
 app.add_route("/from-url", endpoints.FromURL, methods=["GET", "POST"], name="from-url")
 
+app.mount(path="/static", app=StaticFiles(directory="static"), name="static")
+
 # middleware
 app.add_middleware(TrustedHostMiddleware, allowed_hosts=settings.ALLOWED_HOSTS)
 
