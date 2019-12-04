@@ -1,11 +1,6 @@
 
-<a href="https://travis-ci.org/accent-starlette/starlette-pdf">
-    <img src="https://travis-ci.org/accent-starlette/starlette-pdf.svg?branch=master" alt="Build Status">
-</a>
-
-<a href="https://codecov.io/gh/accent-starlette/starlette-pdf">
-  <img src="https://codecov.io/gh/accent-starlette/starlette-pdf/branch/master/graph/badge.svg" alt="Coverage" />
-</a>
+![](https://github.com/accent-starlette/starlette-pdf/workflows/Testing%20Workflow/badge.svg?branch=master)
+![](https://codecov.io/gh/accent-starlette/starlette-pdf/branch/master/graph/badge.svg)
 
 ## Page rule CSS
 
