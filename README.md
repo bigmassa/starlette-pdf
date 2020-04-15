@@ -1,6 +1,8 @@
 
+[![Sourcery](https://img.shields.io/badge/Sourcery-refactored-blueviolet.svg)](https://sourcery.ai)
 ![](https://github.com/accent-starlette/starlette-pdf/workflows/Testing%20Workflow/badge.svg?branch=master)
 ![](https://codecov.io/gh/accent-starlette/starlette-pdf/branch/master/graph/badge.svg)
+![](https://github.com/accent-starlette/starlette-pdf/workflows/Deploy%20to%20Amazon%20ECR/badge.svg)
 
 ## Page rule CSS
 
