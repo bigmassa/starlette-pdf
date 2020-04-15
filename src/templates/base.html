@@ -15,7 +15,7 @@
         </style>
     </head>
 
-    <body>
+    <body class="preload-transitions">
     <header class="b-primary">
         <div class="container">
             <a href="/">WeazyPrint PDF Generator</a>
@@ -35,6 +35,12 @@
             </ul>
         </div>
     </footer>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded",function(){
+            let node = document.querySelector(".preload-transitions");
+            node.classList.remove("preload-transitions");
+        });
+    </script>
     {% block extra_js %}{% endblock %}
     </body>
 </html>
