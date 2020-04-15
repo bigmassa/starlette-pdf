@@ -1,6 +1,6 @@
 # starlette dependencies
 aiofiles
-gunicorn<20.0.0
+gunicorn
 jinja2
 python-multipart
 starlette
