@@ -7,7 +7,7 @@ starlette
 uvicorn
 
 # accent stuff
-git+https://github.com/accent-starlette/starlette-core.git@master#egg=starlette-core
+git+https://github.com/bigmassa/starlette-core.git@master#egg=starlette-core
 
 # other
 sentry-asgi
